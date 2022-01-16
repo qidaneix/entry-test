@@ -1,10 +1,33 @@
 import { Component } from 'react';
-import { ThemeContext } from '../contexts';
+import { ThemeContext, BorderContext } from '../contexts';
 
 export class C extends Component {
-  static contextType = ThemeContext;
+  // static contextType = ThemeContext;
 
   render() {
-    return <section style={this.context}>this is section C</section>;
+    return (
+      <ThemeContext.Consumer>
+        {({ theme, change }) => (
+          <BorderContext.Consumer>
+            {(border: any) => (
+              <section style={{ ...theme, ...border }}>
+                this is section C
+                <button
+                  onClick={() => {
+                    change((preS: any) =>
+                      preS.fontWeight === 900
+                        ? { ...preS, fontWeight: 300 }
+                        : { ...preS, fontWeight: 900 },
+                    );
+                  }}
+                >
+                  change
+                </button>
+              </section>
+            )}
+          </BorderContext.Consumer>
+        )}
+      </ThemeContext.Consumer>
+    );
   }
 }

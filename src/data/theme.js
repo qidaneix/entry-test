@@ -3,3 +3,7 @@ export const theme = {
   color: 'yellow',
   fontWeight: 900,
 };
+
+export const xxx = {
+  border: '5px dashed purple',
+};

@@ -1,3 +1,4 @@
 import { createContext } from 'react';
 
-export const ThemeContext = createContext({ background: 'blue' });
+export const ThemeContext = createContext(null);
+export const BorderContext = createContext(undefined);
