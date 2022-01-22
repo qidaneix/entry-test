@@ -7,6 +7,7 @@ specifiers:
   '@umijs/preset-react': 1.x
   '@umijs/test': ^3.5.20
   antd: ^4.18.2
+  immer: ^9.0.12
   lint-staged: ^10.0.7
   prettier: ^2.2.0
   react: 17.x
@@ -18,6 +19,7 @@ specifiers:
 dependencies:
   '@ant-design/pro-layout': 6.31.7_27961e8e301b5200f6a1283018208f4f
   antd: 4.18.2_react-dom@17.0.2+react@17.0.2
+  immer: 9.0.12
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   umi: 3.5.20
@@ -3623,6 +3625,10 @@ packages:
   /immer/7.0.15:
     resolution: {integrity: sha512-yM7jo9+hvYgvdCQdqvhCNRRio0SCXc8xDPzA25SvKWa7b1WVPjLwQs1VYU5JPXjcJPTqAa5NP5dqpORGYBQ2AA==}
     dev: true
+
+  /immer/9.0.12:
+    resolution: {integrity: sha512-lk7UNmSbAukB5B6dh9fnh5D0bJTOFKxVg2cyJWTYrWRfhLrLMBquONcUs3aFq507hNoIZEDDh8lb8UtOizSMhA==}
+    dev: false
 
   /immutable/3.8.2:
     resolution: {integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=}
